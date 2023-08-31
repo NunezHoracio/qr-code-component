@@ -1,89 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
-
 :root{
-    --white: hsl(0, 0%, 100%);
-    --light-gray: hsl(212, 46%, 89%);
-    --grayish-blue: hsl(219, 15%, 55%);
-    --dark-blue: hsl(217, 45%, 22%);
+    --White: hsl(0, 0%, 100%);
+    --Light_gray: hsl(212, 45%, 89%);
+    --Grayish_blue: hsl(220, 15%, 55%);
+    --Dark_blue: hsl(218, 44%, 22%);
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
-}
-
-html{
     font-family: 'Outfit', sans-serif;
-    font-size: 15px;
 }
 
 body{
-    background-color: var(--light-gray);
-}
-
-main{
-    height: 100vh;
+    background-color: var(--Light_gray);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    height: 100vh;
 }
 
-.card{
-    width: 315px;
-    height: 484px;
-    background-color: var(--white);
-    padding: 18px;
-    margin-bottom: 15px;
-    border-radius: 15px;
-    box-shadow: 0 5px 5px rgba(123, 135, 157, .2)
+.QR-card{
+    background-color: var(--White);
+    width: 320px;
+    padding: 15px;
+    border-radius: 20px;
+    margin-bottom: 20px;
 }
 
-.card .image-qr-code img{
-    width: 280px;
-    height: 280px;
-    border-radius: 15px;
-    margin-bottom: 9px;
+.QR-card_img{
+    width: 100%;
+    border-radius: 10px;
 }
 
-.card .qr-content{
-    padding: 12px;
-}
-
-.card .title-qr{
-    text-align: center;
-    font-size: 22px;
+.title{
+    font-size: 23px;
     font-weight: 700;
-    color: var(--dark-blue);
-    margin-bottom: 19px;
+    color: var(--Dark_blue);
+    text-align: center;
+    margin: 20px 0;
 }
 
-.card .text-qr{
-    text-align: center;
-    
+.description{
     font-weight: 400;
-    color: var(--grayish-blue);
+    color: var(--Grayish_blue);
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.attribution{
-    color: var(--grayish-blue);
-    
-}
-
-.attribution a{
-    color: var(--dark-blue);
-    font-weight: 700;
-}
-
-.attribution a:hover{
-    color: var(--grayish-blue);
-}
-
-@media (max-width: 375px) {
-    .attribution{
-        text-align: center;
+@media (max-width:375px) {
+    .QR-card{
+        width: 300px;
     }
-    
 }
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
